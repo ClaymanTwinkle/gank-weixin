@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="index-container">
+  <swiper wx:if="{{imgUrls.length>0}}" indicator-dots="true" autoplay="true" interval="3000">
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-image" mode="aspectFill" bindtap='onSwiperImageClick' data-url='{{item}}' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for="{{list}}" wx:for-item="today" wx:key="today">
+    <view class='index-item' data-url='{{today.url}}' data-title='{{today.desc}}' bindtap='onItemClick'>
+      <!--文本显示-->
+      <View class="index-item-left-container">
+        <text class='{{today.images&&today.images.length>0?"index-item-text index-item-textWidthImage":"index-item-text"}}'>{{today.desc}}</text>
+        <View class="index-item-left-bottom">
+          <text style='color:gray;font-size:26rpx;'>作者 <text style='color:#1E90FF;font-size:26rpx;'>{{today.who}}</text></text>
+          <text style='color:gray;font-size:26rpx;'>类别 <text style='color:#CD00CD;font-size:26rpx;'>{{today.type}}</text></text>
+        </View>
+      </View>
+      <!--图片-->
+      <image class='index-item-image' wx:if="{{today.images&&today.images.length>0}}" src='{{today.images[0]}}' mode="aspectFill" data-urls='{{today.images}}' catchtap="onImageItemClick" />
+    </view>
+    <view class="line" wx:if="{{index!=list.length-1}}"></view>
+  </block>
+</view>

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/meizi/meizi",
+    "pages/web/web",
+    "pages/more/more",
+    "pages/list/list"
+  ],
+  "tabBar": {
+    "color": "gray",
+    "selectedColor": "#000000",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/outline_home_black.png",
+        "selectedIconPath": "images/baseline_home_black.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/meizi/meizi",
+        "iconPath": "images/outline_face_black.png",
+        "selectedIconPath": "images/baseline_face_black.png",
+        "text": "妹子"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "images/outline_dashboard_black.png",
+        "selectedIconPath": "images/baseline_dashboard_black.png",
+        "text": "更多"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "干货",
+    "navigationBarTextStyle": "black"
+  }
+}

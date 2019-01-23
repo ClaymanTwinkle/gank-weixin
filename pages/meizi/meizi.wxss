@@ -1,0 +1,11 @@
+/**meizi.wxss**/
+.meizi-container {
+  padding: 0;
+}
+
+.meizi-grid {
+  position: relative;
+  float: left;
+  width: 360rpx;
+  height: 400rpx;
+}

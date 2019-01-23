@@ -1,0 +1,30 @@
+/* pages/list/list.wxss */
+
+.container-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.image-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  float: left;
+  justify-content: space-around;
+}
+
+.image {
+  position: relative;
+  float: left;
+  width: 32%;
+}
+
+.line {
+  margin-top: 20rpx;
+  background: #d9d9d9;
+  width: 100%;
+  height: 1rpx;
+}

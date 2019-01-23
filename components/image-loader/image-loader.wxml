@@ -1,0 +1,5 @@
+<!--components/image-loader/image-loader.wxml-->
+<image wx:if='{{!successLoadFlag}}' mode='{{mode}}' src='{{loadImage||""}}' style='{{width ? "width:" + width : ""}};{{height ? "height:" + height : ""}};{{loadColor?"background-color:"+loadColor:""}};'>
+</image>
+<image wx:eif='{{successLoadFlag}}' mode='{{mode}}' src='{{src}}' style='{{width ? "width:" + width : ""}};{{height ? "height:" + height : ""}}' bindload='finishLoad'>
+</image>

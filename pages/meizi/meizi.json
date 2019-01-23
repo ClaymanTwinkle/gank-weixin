@@ -1,0 +1,5 @@
+{
+  "navigationBarTitleText": "妹子",
+  "usingComponents": {"image-loader": "/components/image-loader/image-loader"},
+  "enablePullDownRefresh": true
+}
