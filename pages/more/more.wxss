@@ -1,9 +1,5 @@
 /* pages/more/more.wxss */
 
-.more-list {
-  position: relative;
-  overflow: hidden;
-}
 
 .more-list:before {
   content: "";

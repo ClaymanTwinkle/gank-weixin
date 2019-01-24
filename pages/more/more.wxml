@@ -1,6 +1,6 @@
 <!--pages/more/more.wxml-->
-<View class="more-list">
-  <view class='more-item' wx:for="{{types}}" data-type='{{item}}' bindtap='onItemClick'>
+<View>
+  <view class='more-item' wx:for="{{types}}" wx:key='item' data-type='{{item}}' bindtap='onItemClick'>
     <image class='more-item-icon' src='{{iconList[index]}}'></image>
     <text class='more-item-text'>{{item}}</text>
   </view>

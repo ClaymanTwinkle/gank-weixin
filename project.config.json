@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.0",
+	"libVersion": "2.5.1",
 	"appid": "wx6a5a0d1fa089b5c6",
 	"projectname": "gank-weixin",
 	"debugOptions": {

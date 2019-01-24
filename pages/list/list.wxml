@@ -1,5 +1,5 @@
 <!--pages/list/list.wxml-->
-<View class="container-list" wx:for="{{list}}" bindtap="onItemClick" data-url='{{item.url}}' data-title='{{item.desc}}'>
+<View class="container-list" wx:for="{{list}}" wx:key="item" bindtap="onItemClick" data-url='{{item.url}}' data-title='{{item.desc}}'>
   <!--文本显示-->
   <View>
     <text>{{item.desc}}</text>
