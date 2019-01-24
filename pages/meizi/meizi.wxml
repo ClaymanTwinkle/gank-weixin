@@ -1,6 +1,6 @@
 <!--meizi.wxml-->
 <view class="meizi-container">
-  <block wx:for="{{list}}" wx:for-item="meizi" wx:key="meizi">
-    <image-loader class='meizi-grid' width="400rpx" height="400rpx" src="{{meizi.url}}" loadColor="gray" mode="aspectFill" data-current='{{meizi.url}}' bindtap="onImageItemClick" />
+  <block wx:for="{{list}}" wx:key="item">
+    <image-loader class='meizi-grid' width="400rpx" height="400rpx" src="{{item.url}}" loadColor="gray" mode="aspectFill" data-current='{{item.url}}' bindtap="onImageItemClick" />
   </block>
 </view>

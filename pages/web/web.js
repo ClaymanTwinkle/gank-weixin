@@ -2,14 +2,14 @@ Page({
   data: {
     url:''
   },
-  onLoad: function (option) {
-    if(option.title) {
+  onLoad: function (options) {
+    if (options.title) {
       wx.setNavigationBarTitle({
-        title: option.title
+        title: options.title
       });
     }
     this.setData({
-      url:option.url
+      url: options.url
     });
   }
 })

@@ -34,9 +34,7 @@ Component({
     finishLoad: function(e) {
       this.setData({
         successLoadFlag: true
-      })
-    },
-    failLoad: function(e) {
+      });
     }
   }
 })
